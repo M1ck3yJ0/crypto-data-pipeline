@@ -478,52 +478,8 @@ with col2:
 
 divider()
 
-# ── SECTION 2: LEADERS & LAGGARDS ────────────────────────────────────────────
-section_label("02 · Which coins are leading and lagging?")
-tab1, tab2, tab3 = st.tabs(["1 DAY", "7 DAYS", "30 DAYS"])
-
-
-def performance_table(horizon_col: str) -> tuple[pd.DataFrame, pd.DataFrame]:
-    perf = latest[["name", "symbol", "current_price", "market_cap_b", horizon_col]].dropna()
-    perf = perf.rename(
-        columns={
-            horizon_col: "return_%",
-            "market_cap_b": "mcap_$B",
-            "current_price": "price_$",
-        }
-    )
-    perf["return_%"] = perf["return_%"].round(2)
-    perf["price_$"] = perf["price_$"].round(4)
-    perf["mcap_$B"] = perf["mcap_$B"].round(2)
-    top = perf.nlargest(5, "return_%")[["name", "symbol", "price_$", "mcap_$B", "return_%"]]
-    bottom = perf.nsmallest(5, "return_%")[["name", "symbol", "price_$", "mcap_$B", "return_%"]]
-    return top, bottom
-
-
-for tab, col in zip(
-    [tab1, tab2, tab3],
-    [
-        "price_change_percentage_24h_in_currency",
-        "price_change_percentage_7d_in_currency",
-        "price_change_percentage_30d_in_currency",
-    ],
-):
-    with tab:
-        top5, bot5 = performance_table(col)
-        c1, c2 = st.columns(2)
-        with c1:
-            sub_label("Top 5", tone="positive")
-            st.table(style_table(top5.reset_index(drop=True)))
-
-        with c2:
-            sub_label("Bottom 5", tone="negative")
-            st.table(style_table(bot5.reset_index(drop=True)))
-
-
-divider()
-
-# ── SECTION 3: MOMENTUM ───────────────────────────────────────────────────────
-section_label("03 · What does momentum look like?")
+# ── SECTION 2: MOMENTUM ───────────────────────────────────────────────────────
+section_label("02 · What does momentum look like?")
 
 mom = latest[
     [
@@ -573,6 +529,51 @@ with col6:
         st.plotly_chart(fig6, use_container_width=True)
     else:
         st.info("No coins negative across all three horizons today.")
+
+
+divider()
+
+
+# ── SECTION 3: LEADERS & LAGGARDS ────────────────────────────────────────────
+section_label("03 · Which coins are leading and lagging?")
+tab1, tab2, tab3 = st.tabs(["1 DAY", "7 DAYS", "30 DAYS"])
+
+
+def performance_table(horizon_col: str) -> tuple[pd.DataFrame, pd.DataFrame]:
+    perf = latest[["name", "symbol", "current_price", "market_cap_b", horizon_col]].dropna()
+    perf = perf.rename(
+        columns={
+            horizon_col: "return_%",
+            "market_cap_b": "mcap_$B",
+            "current_price": "price_$",
+        }
+    )
+    perf["return_%"] = perf["return_%"].round(2)
+    perf["price_$"] = perf["price_$"].round(4)
+    perf["mcap_$B"] = perf["mcap_$B"].round(2)
+    top = perf.nlargest(5, "return_%")[["name", "symbol", "price_$", "mcap_$B", "return_%"]]
+    bottom = perf.nsmallest(5, "return_%")[["name", "symbol", "price_$", "mcap_$B", "return_%"]]
+    return top, bottom
+
+
+for tab, col in zip(
+    [tab1, tab2, tab3],
+    [
+        "price_change_percentage_24h_in_currency",
+        "price_change_percentage_7d_in_currency",
+        "price_change_percentage_30d_in_currency",
+    ],
+):
+    with tab:
+        top5, bot5 = performance_table(col)
+        c1, c2 = st.columns(2)
+        with c1:
+            sub_label("Top 5", tone="positive")
+            st.table(style_table(top5.reset_index(drop=True)))
+
+        with c2:
+            sub_label("Bottom 5", tone="negative")
+            st.table(style_table(bot5.reset_index(drop=True)))
 
 
 divider()
