@@ -27,7 +27,7 @@ consistent volatility patterns?
 ## Architecture
 
 <p align="center">
-  <img src="architecture.png" width="600"/>
+  <img src="assets/architecture.png" width="600"/>
 </p>
 
 ---
@@ -35,6 +35,10 @@ consistent volatility patterns?
 ## Live Dashboard
 
 An interactive analytics dashboard built with Streamlit, updated daily.
+
+<p align="center">
+  <img src="assets/dashboard.png" width="600"/>
+</p>
 
 → [View Crypto Market Intelligence Dashboard](https://milcahjoseph-crypto-dashboard.streamlit.app/)
 
