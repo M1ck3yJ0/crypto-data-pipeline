@@ -36,7 +36,7 @@ consistent volatility patterns?
 
 An interactive analytics dashboard built with Streamlit, updated daily.
 
-→ [View Crypto Market Intelligence Dashboard]([your-streamlit-url-here](https://shiny-engine-xg96j59pgrrcvq9p-8501.app.github.dev/))
+→ [View Crypto Market Intelligence Dashboard](https://milcahjoseph-crypto-dashboard.streamlit.app/)
 
 ---
 
