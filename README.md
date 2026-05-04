@@ -12,8 +12,6 @@ This project focuses on robust pipeline design rather than simple data extractio
 cycles in the top 50 cryptocurrencies, and which coins exhibit the most 
 consistent volatility patterns?
 
-*Analysis and visualisation layer in progress.*
-
 ---
 
 ## Overview
@@ -22,7 +20,7 @@ consistent volatility patterns?
 - **Universe:** Fixed top 50 cryptocurrencies as of 2025-12-01 <br>to eliminate survivorship bias and ensure consistent longitudinal comparisons
 - **Storage:** Version-controlled CSV dataset (GitHub)
 - **Orchestration:** GitHub Actions
-- **Analytics:** Power BI
+- **Analytics:** Streamlit
 
 ---
 
@@ -31,6 +29,14 @@ consistent volatility patterns?
 <p align="center">
   <img src="architecture.png" width="600"/>
 </p>
+
+---
+
+## Live Dashboard
+
+An interactive analytics dashboard built with Streamlit, updated daily.
+
+→ [View Crypto Market Intelligence Dashboard]([your-streamlit-url-here](https://shiny-engine-xg96j59pgrrcvq9p-8501.app.github.dev/))
 
 ---
 
@@ -56,16 +62,17 @@ consistent volatility patterns?
 ## Repository Structure
 
 ```text
-config/   # Fixed universe definition
-data/     # Fact table and retry queue
-scripts/  # Ingestion and retry logic
-.github/  # GitHub Actions workflows
+config/    # Fixed universe definition
+data/      # Fact table and retry queue
+scripts/   # Ingestion and retry logic
+streamlit/ # Daily updated dashboard
+.github/   # GitHub Actions workflows
 ```
 
 ---
 
 ## Acknowledgements
 
-This project was developed with assistance from ChatGPT, 
+This project was developed with assistance from ChatGPT & Claude, 
 which supported rapid code development/debugging and README drafting.
 All analytical decisions, pipeline choices, and results interpretation are the author's own.
