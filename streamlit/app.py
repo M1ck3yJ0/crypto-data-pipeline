@@ -551,7 +551,7 @@ with col5:
             barmode="group",
             color_discrete_map=RETURN_COLORS,
         )
-        style_chart(fig5, showlegend=True)
+        style_chart(fig5, title=" ", showlegend=True)
         fig5.update_xaxes(tickangle=0, tickfont_size=FONTS["chart_size"] - 1)
         st.plotly_chart(fig5, use_container_width=True)
     else:
@@ -568,7 +568,7 @@ with col6:
             barmode="group",
             color_discrete_map=NEGATIVE_RETURN_COLORS,
         )
-        style_chart(fig6, showlegend=True)
+        style_chart(fig6, title=" ", showlegend=True)
         fig6.update_xaxes(tickangle=0, tickfont_size=FONTS["chart_size"] - 1)
         st.plotly_chart(fig6, use_container_width=True)
     else:
