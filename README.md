@@ -19,7 +19,7 @@ consistent volatility patterns?
 ## Overview
 
 - **Source:** CoinGecko API
-- **Universe:** Fixed top 50 cryptocurrencies as of 2025-12-01 to eliminate survivorship bias/n/and ensure consistent longitudinal comparisons
+- **Universe:** Fixed top 50 cryptocurrencies as of 2025-12-01 <br>to eliminate survivorship bias and ensure consistent longitudinal comparisons
 - **Storage:** Version-controlled CSV dataset (GitHub)
 - **Orchestration:** GitHub Actions
 - **Analytics:** Power BI
