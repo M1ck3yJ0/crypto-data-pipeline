@@ -1,2 +1,1 @@
 id,symbol,name,date,status,attempts,last_error,first_seen_utc,last_attempt_utc
-crypto-com-chain,cro,Cronos,2026-05-06,queued,1,Failed to fetch https://api.coingecko.com/api/v3/coins/crypto-com-chain/market_chart after 5 attempts.,2026-05-06T05:23:24.639422+00:00,2026-05-06T05:23:24.639422+00:00
