@@ -1,2 +1,1 @@
 id,symbol,name,date,status,attempts,last_error,first_seen_utc,last_attempt_utc
-polkadot,dot,Polkadot,2026-05-31,queued,1,Failed to fetch https://api.coingecko.com/api/v3/coins/polkadot/market_chart after 5 attempts.,2026-05-31T06:22:22.706273+00:00,2026-05-31T06:22:22.706273+00:00
