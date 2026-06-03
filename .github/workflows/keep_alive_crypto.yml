@@ -2,7 +2,7 @@ name: Keep Cryto Streamlit App Alive
 
 on:
   schedule:
-    - cron: '0 12 * * 2,5'
+    - cron: '0 0,8,16 * * *'  # Runs every 8 hours to stay within Streamlit's 12 hour sleep window
   workflow_dispatch:
 
 jobs:
