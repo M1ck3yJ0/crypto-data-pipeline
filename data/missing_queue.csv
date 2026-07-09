@@ -1,2 +1,1 @@
 id,symbol,name,date,status,attempts,last_error,first_seen_utc,last_attempt_utc
-usd1-wlfi,usd1,USD1,2026-07-09,queued,1,Failed to fetch https://api.coingecko.com/api/v3/coins/usd1-wlfi/market_chart after 5 attempts.,2026-07-09T06:00:53.989670+00:00,2026-07-09T06:00:53.989670+00:00
