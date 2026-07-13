@@ -1,1 +1,2 @@
 id,symbol,name,date,status,attempts,last_error,first_seen_utc,last_attempt_utc
+the-open-network,ton,Toncoin,2026-07-13,queued,1,Failed to fetch https://api.coingecko.com/api/v3/coins/the-open-network/market_chart after 5 attempts.,2026-07-13T05:25:35.109365+00:00,2026-07-13T05:25:35.109365+00:00
