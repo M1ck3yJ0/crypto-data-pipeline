@@ -73,11 +73,3 @@ streamlit/ # Daily updated dashboard
 .github/   # GitHub Actions workflows
 ```
 
----
-
-## Acknowledgements
-
-Analysis, pipeline and interpretation are the author's own.
-
-ChatGPT & Claude were used for assistance with
-debugging code snippets and for README drafting.
