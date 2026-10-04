@@ -1,1 +1,2 @@
 id,symbol,name,date,status,attempts,last_error,first_seen_utc,last_attempt_utc
+hedera-hashgraph,hbar,Hedera,2026-10-04,queued,1,Failed to fetch https://api.coingecko.com/api/v3/coins/hedera-hashgraph/market_chart after 5 attempts.,2026-10-04T07:39:50.322145+00:00,2026-10-04T07:39:50.322145+00:00
