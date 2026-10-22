@@ -1,1 +1,2 @@
 id,symbol,name,date,status,attempts,last_error,first_seen_utc,last_attempt_utc
+aave,aave,Aave,2026-10-22,queued,1,Failed to fetch https://api.coingecko.com/api/v3/coins/aave/market_chart after 5 attempts.,2026-10-22T06:48:14.591413+00:00,2026-10-22T06:48:14.591413+00:00
