@@ -1,1 +1,4 @@
 id,symbol,name,date,status,attempts,last_error,first_seen_utc,last_attempt_utc
+canton-network,cc,Canton,2026-11-28,queued,1,Failed to fetch https://api.coingecko.com/api/v3/coins/canton-network/market_chart after 5 attempts.,2026-11-28T09:46:24.550372+00:00,2026-11-28T09:46:24.550372+00:00
+wrapped-steth,wsteth,Wrapped stETH,2026-11-28,queued,1,Failed to fetch https://api.coingecko.com/api/v3/coins/wrapped-steth/market_chart after 5 attempts.,2026-11-28T09:46:24.550372+00:00,2026-11-28T09:46:24.550372+00:00
+zcash,zec,Zcash,2026-11-28,queued,1,Failed to fetch https://api.coingecko.com/api/v3/coins/zcash/market_chart after 5 attempts.,2026-11-28T09:46:24.550372+00:00,2026-11-28T09:46:24.550372+00:00
